@@ -1,82 +1,9 @@
-<div class="mdl-grid" id="home">
-  <!-- <div class="mdl-cell mdl-cell--1-col">
-  </div> -->
-  <!-- <div class="mdl-cell mdl-cell--4-col mdl-card mdl-card__actions">
-    <img id="me"src="../images/slack1.jpg" alt="me" class="mdl-shadow--6dp">
-  </div> -->
-<!-- <div class="mdl-cell mdl-cell--12-col"> -->
-  <!-- <div class=""> -->
 
-  <!-- </div> -->
-
-
-
-  <div class="mdl-cell mdl-cell--6-col" id="homeText">
-    <div class="text-left">
-      Welcome to my landing page. I'm a developer for-hire, interested in both
-      front and back-end development. I specialize in modern web frameworks like
-      AngularJS, ReactJS, and component-based architecture. I love bringing ideas to life and creating interesting and useful software for the web.
-    </div><br>
-    <div class="text-left">
-      Have fun checking out my site and the projects I've been working on and feel
-      free to contact me by email at: <a href="mailto:matieu.bouchard@gmail.com" id="email">matieubouchard@gmail.com</a>
-    </div>
-    <hr>
-    <div>
-      <h4><span class="btnFont text-center">stack</span></h4>
-      <div class="text-center">
-        Javascript |
-        AngularJS |
-        NodeJS |
-        Express |
-        PostgreSQL |
-        JQuery
-        sockets.io |
-        TDD |
-        Jasmine |
-        Mocha/Chai |
-        Git |
-        Knex |
-        Heroku |
-        Firebase
-        Material Design |
-        WordPress |
-        AWS/EC2 |
-        Bootstrap |
-        HTML |
-        SCSS/CSS
-        Polymer |
-        Python
-        Ruby |
-        PHP |
-        Java |
-        ReactJS |
-        Canvas
-
-      </div>
-      <hr>
-      <div class="mdl-cell mdl-cell--12-col">
-        <span class="btnFont">about me</span>
-        <span class="btnFont">
-          <p>
-            I'm passionate about supporting small businesses, artists, and healers to develop an effective web presence.
-          </p>
-          <p>
-            I like using software to solve intersting problems, to help connect people, and am often awestruck that science fiction is becoming fact in my lifetime.
-          </p>
-          <p>
-            I'm a banjoneer and flight enthusiast. I could watch birds thermaling all day.
-          </p>
-      </div>
-
-
-
-
-    </div>
-
-
-  </div>
-      <img id="me"src="../images/slacky.jpg" alt="me" class="mdl-shadow--6dp mdl-cell mdl-cell--4-col ">
-</div>
-
-</div>
+<button ng-mouseover="playSynth1()" type="button" name="button">D</button>
+<button ng-mouseover="playSynth2()" type="button" name="button">B</button>
+<button ng-mouseover="playSynth3()" type="button" name="button">G</button>
+<button ng-mouseover="playSynth4()" type="button" name="button">D</button>
+<button ng-mouseover="playSynth5()" type="button" name="button">G</button>
+<button ng-mouseover="playSound()" type="button" name="button">Sequence</button>
+<br><hr>
+<div audio options="options" />

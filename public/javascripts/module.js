@@ -1,13 +1,13 @@
 (function() {
   'use strict';
 
-  angular.module('matthew',['ngAnimate','ui.router'])
+  angular.module('banjoman',['ngAnimate','ui.router','ngAudio'])
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
     .state('home', {
       url: '/',
-      templateUrl:"./components/home/home.html"
+      template:"<audio-test><audio-test/>"
     })
     .state('projects', {
       url: '/projects',

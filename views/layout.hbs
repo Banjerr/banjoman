@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="matthew">
+<html ng-app="banjoman">
 <head>
-
-  <!-- JQUERY -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+<!-- JQUERY -->
   <!-- Font Awesosme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-red.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css'>
@@ -18,104 +13,58 @@
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <!-- ngAudio -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-audio/1.7.2/angular.audio.min.js">
+
+  </script>
+  <!-- ngAudio -->
+  <!-- <script src="../bower_components/ng-audio/src/public/javascripts/ng-audio.js"</script>
+  <link rel="stylesheet" href="../bower_components/src/public/stylesheets/ng-audio.css" media="screen" title="no title" charset="utf-8"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
   <!-- ngAnimate -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
   <!-- uiRouter -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <!-- Module -->
   <script type="text/javascript" src="../javascripts/module.js"></script>
+  <!-- home directive -->
+  <script src ="../components/home/home.js"></script>
+  <!-- services -->
+  <script src ="../services/string_service.js"></script>
+
+<!-- AudioContext -->
+<!-- <script src ='../node_modules/audio-context/index.js'> -->
+</script>
+  <!-- webaudiox -->
+  <script src="../bower_components/audiocontext-polyfill/audiocontext-polyfill.js"></script>
+  <script src="../bower_components/webaudiox/build/webaudiox.js"></script>
+  <!-- noteplayer -->
+  <script src="../node_modules/noteplayer/lib/notePlayer.js"></script>
+<!-- tone.js -->
+<script src="../bower_components/tone/build/Tone.min.js"></script>
+<!-- midi audio -->
+<script src="../bower_components/midi/js/midi/audioDetect.js"></script>
+<script src="../bower_components/midi/js/midi/gm.js"></script>
+<script src="../bower_components/midi/js/midi/loader.js"></script>
+<script src="../bower_components/midi/js/midi/player.js"></script>
+<script src="../bower_components/midi/js/midi/plugin.audiotag.js"></script>
+<script src="../bower_components/midi/js/midi/plugin.webaudio.js"></script>
+<script src="../bower_components/midi/js/midi/plugin.webmidi.js"></script>
+<script src="../bower_components/midi/js/midi/synesthesia.js"></script>
+
+
 </head>
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header id="header" class="mdl-layout__header mdl-layout--fixed-header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title"><a ui-sref="home">  <span id="titleFont"><span id="title"><h4 style="font-family:quicksand;font-size:32px;">MATTHEW BOUCHARD <br>web-developer  <img style="width:9%"src="/images/sg2.png" alt="sugar_glider"></h4>
-        </span></span></a></span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-
-        <div class="navButtons">
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
-
-            <!-- <span id="projects"> -->
-            <a class=" mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
-            <!-- </span> -->
-            <!-- <span id="resBtn">   -->
-            <a class="mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
-            <!-- </span> -->
 
 
-          </nav>
-        </div>
-      </div>
 
-    </header>
-    <div class="mdl-layout__drawer">
-    <br><br>
-      <span class="mdl-layout-title">
-        <a ui-sref="home"
-        <span id="drawerTitle">
-          <span id="title">
-            <p style="font-family:quicksand;font-size:26px;">MATTHEW BOUCHARD <br><span style="font-size:20px;">web-developer</span><img class="text-center"style="width:11%"src="/images/sg2.png" alt="sugar_glider">
-            </p><br>
-          </span>
-        </span>
-        </a>
-      </span>
-<hr>
-    <nav class="mdl-navigation ">
-      <div>
-        <a class="drawerBtns mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link mdl-cell mdl-cell--1-col" ui-sref="home">HOME<i class="material-icons">filter_hdr</i></a>
-      </div><br><br><br><br><br><br>
+  <ui-view></ui-view>
 
-      <!-- <span id="projects"> -->
-      <div>
-        <a class="drawerBtns mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect  mdl-navigation__link " ui-sref="projects">projects<i class="material-icons">folder</i></a>
-      </div><br><br><br><br><br><br>
-      <!-- </span> -->
-      <!-- <span id="resBtn">   -->
-      <div>
-        <a class="drawerBtns mdl-navigation__link mdl-navigation__link mdl-js-button mdl-button mdl-js-ripple-effect" ui-sref="resume">Resume<i class="material-icons">fingerprint</i></a>
-      </div><br><br><br><br>
-      <!-- </span> -->
-    </nav>
-  </div>
-  <!-- </div> -->
-  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
 
-    <ui-view></ui-view>
 
-    <main class="mdl-layout__content">
-    </main>
-    <div>
-      <footer id="footer" class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-          <div class="mdl-logo"><span id="footerFont">&copy 2016 Matthew Bouchard</span></div>
-          <ul class="mdl-mini-footer__link-list">
+<script type="text/javascript">
 
-          </ul>
-        </div><div class="mdl-mini-footer__right-section">
-          <div class="iconContainer text-center">
-            <a href="https://github.com/MatieuB">
-              <i class="fa fa-github mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/matthewjbouchard">
-              <i class="fa fa-linkedin mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/MatieuBouchard">
-              <i class="fa fa-twitter mdl-cell mdl-cell--3-col" aria-hidden="true"></i></i>
-            </a>
-            <a href="mailto:bouchard.matthewj@gmail.com">
-              <i class="fa fa-envelope mdl-cell mdl-cell--3-col" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
+</script>
 
-      </footer>
-    </div>
-  </div>
 </body>
 </html>
