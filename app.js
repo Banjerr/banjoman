@@ -18,11 +18,6 @@ var np = require('noteplayer');
 // var playerStream = require("note-player-stream");
 // var webMidi = require("web-midi");
 // var noteStream = require("web-midi-note-stream");
-
-// webMidi("Launchpad")
-// 	.pipe(noteStream())
-// 	.pipe(playerStream());
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
