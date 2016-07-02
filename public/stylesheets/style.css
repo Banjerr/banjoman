@@ -7,63 +7,87 @@ body {
   font-size:60px;
 }
 
-#banjo{
-margin: 22% auto;
-}
-.animated-element-with-keyframes{
-  enterLeaveCSSswitch"
-}
+
 #string1{
+  display: inline-flex;
   position:relative;
-  height:365px;
-  width:2px;
+  height:45vh;
+  width:1%;
   background-color: silver;
-  margin: 22% 1px;
+  margin: 22% auto;
+
   z-index: 100;
 }
 #string2
 {
+  display: inline-flex;
   position:relative;
-  height:365px;
-  width:3px;
+  height:45vh;
+  width:1%;
   background-color: silver;
-  margin: 22% 1px;
-  z-index: 100;;
+  margin: 22% auto;
+
+  z-index: 100;
 }
 #string3{
+  display: inline-flex;
   position:relative;
-  height:365px;
-  width:4px;
+  height:45vh;
+  width:1%;
   background-color: silver;
-  margin: 22% 1px;
+  margin: 22% auto;
+
   z-index: 100;
 }
 #string4{
+  display: inline-flex;
   position:relative;
-  height:365px;
-  width:5px;
+  height:45vh;
+  width:2%;
   background-color: silver;
-  margin: 22% 1px;
+  margin: 22% auto;
+
   z-index: 100;
 }
 #string5{
+  display: inline-flex;
   position:relative;
-  height:365px;
-  width:2px;
+  height:45vh;
+  width:1%;
   background-color: silver;
-  margin: 22% 1px;
+  margin: 22% auto;
+
   z-index: 100;
 }
-#stringContainer{
-  margin:0 auto;
-  margin-left: 7%;
-  /*background-image: url('../images/necky.png');
-background-repeat: no-repeat;
-  width:10px;*/*/
+#string6{
+  height:85vh;
+  display: inline-flex;
+  position: relative;
 }
-#banjo{
-position: absolute;
-  width:21%;
-  margin:0 auto;
-  z-index: -999;
+#stringContainer{
+  /*margin:0 auto;*/
+  /*margin-left: 35.5%;*/
+  position: relative;
+  /*width:13%;*/
+  width: auto;
+  height:100vh;
+  /*overflow: auto;*/
+  background-image: url('../images/olbanjo.png');
+  background-repeat: no-repeat;
+}
+
+
+tr td{
+  border-right: 1px solid black;
+  width:1%;
+  height:100px;
+}
+#tableaux{
+  width:20%;
+}
+.fret{
+  border-bottom: 1px solid black;
+}
+tbody{
+  border: 1px solid black;
 }
