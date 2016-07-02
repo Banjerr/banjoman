@@ -22,6 +22,14 @@ angular.module('banjoman')
             four:s.D3,
             five:s.G4
           },
+          Gm:
+          {
+            one:s.D4,
+            two:s.Bb3,
+            three:s.G3,
+            four:s.D3,
+            five:s.G4
+          },
           A:
           {
             one: s.E4,
@@ -29,23 +37,46 @@ angular.module('banjoman')
             three:s.A3,
             four:s.E3,
             five:s.A4
-          }
+          },
+          Am:
+          {
+            one: s.E4,
+            two: s.C4,
+            three:s.A3,
+            four:s.E3,
+            five:s.A4
+          },
+          B:
+          {
+            one: s.Eb4,
+            two: s.B3,
+            three:s.B3,
+            four:s.Gb3,
+            five:s.B4
+          },
+          Bm:
+          {
+            one: s.D4,
+            two: s.D4,
+            three:s.B3,
+            four:s.Gb3,
+            five:s.B4
+          },
+          Bm7:
+          {
+            one: s.Gb4,
+            two: s.B3,
+            three:s.A3,
+            four:s.D4,
+            five:s.A4
+          },
         }
       }
-
-      // class Player {
-      //   constructor(tuning) {
-      //     this.one = tuning.one;
-      //     this.two = tuning.two;
-      //     this.three = tuning.three;
-      //     this.four = tuning.four;
-      //     this.five = tuning.five;
-      //   }
-       $scope.tuning="Gmajor";
-       $scope.chord="G";
-        $scope.play = function(tuning,chord,string){
-          return ngAudio.play(obj[tuning][chord][string])
-        }
+      $scope.tuning="Gmajor";
+      $scope.chord="G";
+      $scope.play = function(tuning,chord,string){
+        return ngAudio.play(obj[tuning][chord][string])
+      }
       
     }
   }

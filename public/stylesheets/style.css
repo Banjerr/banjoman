@@ -1,5 +1,5 @@
 body {
-  /*padding: 50px;*/
+  /*margin: 50px;*/
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
   font-family: quicksand;
   background-color: rgb(243, 243, 243);
@@ -8,5 +8,62 @@ body {
 }
 
 #banjo{
-margin: 20% auto;
+margin: 22% auto;
+}
+.animated-element-with-keyframes{
+  enterLeaveCSSswitch"
+}
+#string1{
+  position:relative;
+  height:365px;
+  width:2px;
+  background-color: silver;
+  margin: 22% 1px;
+  z-index: 100;
+}
+#string2
+{
+  position:relative;
+  height:365px;
+  width:3px;
+  background-color: silver;
+  margin: 22% 1px;
+  z-index: 100;;
+}
+#string3{
+  position:relative;
+  height:365px;
+  width:4px;
+  background-color: silver;
+  margin: 22% 1px;
+  z-index: 100;
+}
+#string4{
+  position:relative;
+  height:365px;
+  width:5px;
+  background-color: silver;
+  margin: 22% 1px;
+  z-index: 100;
+}
+#string5{
+  position:relative;
+  height:365px;
+  width:2px;
+  background-color: silver;
+  margin: 22% 1px;
+  z-index: 100;
+}
+#stringContainer{
+  margin:0 auto;
+  margin-left: 7%;
+  /*background-image: url('../images/necky.png');
+background-repeat: no-repeat;
+  width:10px;*/*/
+}
+#banjo{
+position: absolute;
+  width:21%;
+  margin:0 auto;
+  z-index: -999;
 }
