@@ -1,9 +1,29 @@
 
-<button ng-mouseover="A.play1(tunings.Gmajor.A)" type="button" name="button">D</button>
-<button ng-mouseover="A.play2(tunings.Gmajor.A)" type="button" name="button">B</button>
-<button ng-mouseover="A.play3(tunings.Gmajor.A)" type="button" name="button">G</button>
-<button ng-mouseover="A.play4(tunings.Gmajor.A)" type="button" name="button">D</button>
-<button ng-mouseover="A.play5(tunings.Gmajor.A)" type="button" name="button">G</button>
-<!-- <button ng-mouseover="playSound()" type="button" name="button">Sequence</button> -->
+<button ng-mouseover="play(tuning,chord,'one')" type="button" name="button">D</button>
+<button ng-mouseover="play(tuning,chord,'two')" type="button" name="button">B</button>
+<button ng-mouseover="play(tuning,chord,'three')" type="button" name="button">G</button>
+<button ng-mouseover="play(tuning,chord,'four')" type="button" name="button">D</button>
+<button ng-mouseover="play(tuning,chord,'five')" type="button" name="button">G</button>
+
 <br><hr>
 <div audio options="options" />
+<div>
+  <h5>Pick a tuning</h5>
+  <select ng-model='tuning' name="Tuning" id="">
+  <option value="tunings.GM">G major</option>
+  <option value="tunings.Gm">G minor</option>
+  <option value="tunings.C">Open C</option>
+  <option value="tunings.DblC">Double C</option>
+  <option value="tunings.Gmod">G modal</option>
+  </select>
+</div>
+<div>
+  <h5>Pick a chord</h5>
+  <select ng-model="chord" name="chord" id="chord">
+  <option  ng-value="G">G</option>
+  <option  ng-value="A">A</option>
+  <!-- <option value="tunings.C">Open C</option>
+  <option value="tunings.DblC">Double C</option>
+  <option value="tunings.Gmod">G modal</option> -->
+  </select>
+</div>
