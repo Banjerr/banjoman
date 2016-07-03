@@ -1,21 +1,3 @@
-<div class="stringContainer">
-
-  <div id="string5"class="shake-little" ng-mouseover="play(tuning,chord,'five')"></div>
-  <div id="string4"class="shake-little" ng-mouseover="play(tuning,chord,'four')" ></div>
-  <div id="string3"class="shake-little" ng-mouseover="play(tuning,chord,'three')" ></div>
-  <div id="string2" class="shake-little" ng-mouseover="play(tuning,chord,'two')" ></div>
-  <div id="string1"class="shake-little" ng-mouseover="play(tuning,chord,'one')" ></div>
-
-
-</div>
-<!-- <img src="../images/neckyvector1.png" alt="png"> -->
-<img src="../images/neckyvector.svg" alt="svg">
-<!-- <img src="../images/neckyvector.ai" alt="ai"> -->
-
-
-
-<div audio options="options"/>
-
 <h5>Pick a tuning</h5>
 <select ng-model='tuning' name="Tuning" class="input-field col s12" id="tuning">
   <option value="GMajor">G major</option>
@@ -36,3 +18,20 @@
   <option  ng-value="Bm">Bm</option>
   <option  ng-value="Bm7">Bm7</option>
 </select>
+<div class="stringContainer">
+
+  <div id="string5"class="shake-little" ng-mouseover="play(tuning,chord,'five')"></div>
+  <div id="string4"class="shake-little" ng-mouseover="play(tuning,chord,'four')" ></div>
+  <div id="string3"class="shake-little" ng-mouseover="play(tuning,chord,'three')" ></div>
+  <div id="string2" class="shake-little" ng-mouseover="play(tuning,chord,'two')" ></div>
+  <div id="string1"class="shake-little" ng-mouseover="play(tuning,chord,'one')" ></div>
+
+
+</div>
+<!-- <img src="../images/neckyvector1.png" alt="png"> -->
+<img src="../images/neckyvector.svg" alt="svg">
+<!-- <img src="../images/neckyvector.ai" alt="ai"> -->
+
+
+
+<div audio options="options"/>
