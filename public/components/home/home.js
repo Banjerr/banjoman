@@ -3,8 +3,10 @@ angular.module('banjoman')
 .directive('audioTest',function () {
   return{
     templateUrl: '/components/home/home.html',
-    controller: function ($scope,$log,$timeout,ngAudio,stringService) {
-
+    controller: function ($scope,$log,$timeout,ngAudio,stringService,$document,$window) {
+      $scope.play = function(tuning,chord,string){
+        return ngAudio.play(obj[tuning][chord][string])
+      }
       $scope.chord = "G";
       $scope.tester = 'jhi'
 
@@ -72,12 +74,9 @@ angular.module('banjoman')
           },
         }
       }
-      $scope.tuning="Gmajor";
-      $scope.chord="G";
-      $scope.play = function(tuning,chord,string){
-        return ngAudio.play(obj[tuning][chord][string])
-      }
-      
+
+
+
     }
   }
 })
