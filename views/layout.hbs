@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="banjoman">
 <head>
+  <meta name="viewport" content="width=device-width">
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <!-- ngAudio -->
@@ -34,9 +35,9 @@ $event.which === 108 && play(tuning,chord,'two');
 $event.which === 107 && play(tuning,chord,'three');
 $event.which === 106 && play(tuning,chord,'four');
 $event.which === 32 && play(tuning,chord,'five');
-$event.which === 49 && fingerChange('G');
+$event.which === 49 && fingerChange('G') && chordChange('G');
 $event.which === 113 && fingerChange('Gm');
-$event.which ===115 &&fingerChange('A');
+$event.which ===50 && fingerChange('A')&& chordChange('A');
 $event.which ===119 &&fingerChange('Am');
 $event.which ===51 &&fingerChange('B');
 $event.which ===101 &&fingerChange('Bm');
@@ -54,7 +55,7 @@ $event.which ===118 &&fingerChange('Fm');
 
 ">
 
-
+<chord-test></chord-test>
 <audio-test></audio-test>
 
 
