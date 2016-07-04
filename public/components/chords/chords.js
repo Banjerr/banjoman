@@ -34,7 +34,7 @@ angular.module('banjoman')
         $scope.chord = newVal
       }
     );
-    if($scope.chord == 'G') $scope.test = ['G','B','D']
+    // if($scope.chord == 'G') $scope.test = ['G','B','D']
     // if($scope.chord == 'A') $scope.test = ['A','C#','E']
 
     // $scope.watch($scope.chord,function(){
@@ -49,13 +49,14 @@ angular.module('banjoman')
     $log.info('rows:',rows)
 
     $scope.chordChange = function(newChord){
+      $scope.chord = newChord;
       if(newChord == 'G') $scope.test = ['G','B','D'];
       if(newChord == 'Gm') $scope.test = ['G','Bb','D'];
-      if(newChord == 'Gm7') $scope.test = ['G','Bb','D','F#'];
+      if(newChord == 'Gm7') $scope.test = ['G','Bb','D','F'];
       if(newChord == 'GM7') $scope.test = ['G','B','D','F#'];
       if(newChord == 'A') $scope.test = ['A','C#','E']
       if(newChord == 'Am') $scope.test = ['A','C','E']
-      if(newChord == 'Am7') $scope.test = ['A','C','E','Ab']
+      if(newChord == 'Am7') $scope.test = ['A','C','E','G']
       if(newChord == 'AM7') $scope.test = ['A','C#','E','Ab']
       if(newChord == 'B') $scope.test = ['B','Eb','F#']
       if(newChord == 'Bm') $scope.test = ['B','D','F']
@@ -67,15 +68,15 @@ angular.module('banjoman')
       if(newChord == 'Cm') $scope.test = ['C','Eb','G']
       if(newChord == 'D') $scope.test = ['D','F#','A']
       if(newChord == 'Dm') $scope.test = ['D','F','A']
-      if(newChord == 'Dm7') $scope.test = ['D','F','A','C#']
+      if(newChord == 'Dm7') $scope.test = ['D','F','A','C']
       if(newChord == 'DM7') $scope.test = ['D','F#','A','C#']
       if(newChord == 'E') $scope.test = ['E','Ab','B']
       if(newChord == 'Em') $scope.test = ['E','G','B']
-      if(newChord == 'Em7') $scope.test = ['E','G','B','Eb']
+      if(newChord == 'Em7') $scope.test = ['E','G','B','D']
       if(newChord == 'EM7') $scope.test = ['E','Ab','B','Eb']
       if(newChord == 'F') $scope.test = ['F','A','C']
       if(newChord == 'Fm') $scope.test = ['F','Ab','C']
-      if(newChord == 'Fm7') $scope.test = ['F','Ab','C','E']
+      if(newChord == 'Fm7') $scope.test = ['F','Ab','C','Eb']
       if(newChord == 'FM7') $scope.test = ['F','A','C','E']
 
       $scope.resets = document.getElementsByClassName('high')

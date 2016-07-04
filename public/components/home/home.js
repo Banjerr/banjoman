@@ -38,15 +38,31 @@ angular.module('banjoman')
             four:s.D3,
             five:s.G4
           },
+          Gm7:
+          {
+            one:s.F4,
+            two:s.D4,
+            three:s.Bb3,
+            four:s.F3,
+            five:s.G4
+          },
           A:
           {
             one: s.E4,
-            two: s.Db4,
+            two: s.D4,
             three:s.A3,
             four:s.E3,
             five:s.A4
           },
           Am:
+          {
+            one: s.E4,
+            two: s.C4,
+            three:s.A3,
+            four:s.E3,
+            five:s.A4
+          },
+          Am7:
           {
             one: s.E4,
             two: s.C4,
@@ -77,6 +93,102 @@ angular.module('banjoman')
             three:s.A3,
             four:s.D4,
             five:s.A4
+          },
+          C:
+          {
+            one: s.E4,
+            two: s.C4,
+            three:s.G3,
+            four:s.E3,
+            five:s.G4
+          },
+          Cm:
+          {
+            one: s.Eb4,
+            two: s.C4,
+            three:s.G3,
+            four:s.Eb3,
+            five:s.G4
+          },
+          Cm7:
+          {
+            one: s.Eb4,
+            two: s.C4,
+            three:s.Bb3,
+            four:s.Eb3,
+            five:s.G4
+          },
+          D:
+          {
+            one: s.Gb4,
+            two: s.D4,
+            three:s.A3,
+            four:s.D3,
+            five:s.G4
+          },
+          Dm:
+          {
+            one: s.F4,
+            two: s.D4,
+            three:s.A3,
+            four:s.D3,
+            five:s.G4
+          },
+          Dm7:
+          {
+            one: s.F4,
+            two: s.C4,
+            three:s.A3,
+            four:s.D3,
+            five:s.G4
+          },
+          E:
+          {
+            one: s.E4,
+            two: s.B3,
+            three:s.Ab3,
+            four:s.E3,
+            five:s.G4
+          },
+          Em:
+          {
+            one: s.E4,
+            two: s.B3,
+            three:s.G3,
+            four:s.E3,
+            five:s.G4
+          },
+          Em7:
+          {
+            one: s.D4,
+            two: s.B3,
+            three:s.G3,
+            four:s.E3,
+            five:s.G4
+          },
+          F:
+          {
+            one: s.F4,
+            two: s.C4,
+            three:s.A3,
+            four:s.F3,
+            five:s.G4
+          },
+          Fm:
+          {
+            one: s.F4,
+            two: s.C4,
+            three:s.Ab3,
+            four:s.F3,
+            five:s.G4
+          },
+          Fm7:
+          {
+            one: s.F4,
+            two: s.C4,
+            three:s.Ab3,
+            four:s.Eb3,
+            five:s.G4
           },
         }
       }
