@@ -3,7 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width">
   <!-- Angular -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <link rel="stylesheet" href="../bower_components/angular/angular-csp.css" media="screen" title="no title" charset="utf-8">
   <!-- ngAudio -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-audio/1.7.2/angular.audio.min.js"></script>
   <!-- createJS -->
@@ -12,6 +13,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
   <!-- uiRouter -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+  <!-- jquery -->
+  <script src = "../bower_components/jquery/dist/jquery.min.js">
+  </script>
+  <!--normal-bootstrap -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"> </script>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
   <!-- Module -->
   <script type="text/javascript" src="../javascripts/module.js"></script>
   <!-- home directive -->
@@ -25,8 +32,8 @@
   <!-- csshake -->
   <link rel="stylesheet" href="../bower_components/csshake/dist/csshake-little.min.css"/>
   <link rel="stylesheet" href="../bower_components/csshake/scss/csshake-little.scss"/>
-<!-- quicksand-font -->
-<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css' >
+  <!-- quicksand-font -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css' >
 </head>
 <body
 ng-keypress="
@@ -50,20 +57,50 @@ $event.which ===99 &&chordChange('Em');
 $event.which ===102 &&chordChange('F');
 $event.which ===118 &&chordChange('Fm');
 
-
-
-
 ">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" ng-src="../images/sg2.png">
+      </a>
+      <div class="navbar-right">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          How to Play
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<chord-test>
+<chord-test class ="col s5">
 
 
 </chord-test>
-<audio-test></audio-test>
+<audio-test class="col s5"></audio-test>
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title" id="myModalLabel">Banjo Controls</h4>
+      </div>
+      <div class="modal-body">
+        <img class="col-md-12" id ="keyboard"ng-src="../images/keyboard.png" alt="keyboard" />
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--
-  <ui-view></ui-view> -->
+<ui-view></ui-view> -->
 
 
 

@@ -113,13 +113,18 @@ flex-basis: 1%;
   text-align: center;
   height:80vh;
   /*margin-bottom:5%;*/
-padding-bottom:2%;
+padding-bottom:1%;
 border: 2px solid rgb(92, 35, 3);
-background-color: rgba(92, 35, 3,0.6)
+background-color: rgba(92, 35, 3,0.6);
+border-radius: 2%;
 }
 /*.fretboard td{
   height:120%;
 }*/
 .tableConatainer{
   height:100%
+}
+#keyboard{
+  border-radius: 2%;
+  padding-top: 2%;
 }
