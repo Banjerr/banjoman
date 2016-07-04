@@ -50,39 +50,40 @@ angular.module('banjoman')
 
     $scope.chordChange = function(newChord){
       if(newChord == 'G') $scope.test = ['G','B','D'];
+      if(newChord == 'Gm') $scope.test = ['G','Bb','D'];
+      if(newChord == 'Gm7') $scope.test = ['G','Bb','D','F#'];
+      if(newChord == 'GM7') $scope.test = ['G','B','D','F#'];
       if(newChord == 'A') $scope.test = ['A','C#','E']
+      if(newChord == 'Am') $scope.test = ['A','C','E']
+      if(newChord == 'Am7') $scope.test = ['A','C','E','Ab']
+      if(newChord == 'AM7') $scope.test = ['A','C#','E','Ab']
+      if(newChord == 'B') $scope.test = ['B','Eb','F#']
+      if(newChord == 'Bm') $scope.test = ['B','D','F']
+      if(newChord == 'Bm7') $scope.test = ['B','D','F','G']
+      if(newChord == 'BM7') $scope.test = ['B','Eb','F','G']
+      if(newChord == 'C') $scope.test = ['C','E','G']
+      if(newChord == 'Cm7') $scope.test = ['C','Eb','G','B']
+      if(newChord == 'CM7') $scope.test = ['C','E','G','B']
+      if(newChord == 'Cm') $scope.test = ['C','Eb','G']
+      if(newChord == 'D') $scope.test = ['D','F#','A']
+      if(newChord == 'Dm') $scope.test = ['D','F','A']
+      if(newChord == 'Dm7') $scope.test = ['D','F','A','C#']
+      if(newChord == 'DM7') $scope.test = ['D','F#','A','C#']
+      if(newChord == 'E') $scope.test = ['E','Ab','B']
+      if(newChord == 'Em') $scope.test = ['E','G','B']
+      if(newChord == 'Em7') $scope.test = ['E','G','B','Eb']
+      if(newChord == 'EM7') $scope.test = ['E','Ab','B','Eb']
+      if(newChord == 'F') $scope.test = ['F','A','C']
+      if(newChord == 'Fm') $scope.test = ['F','Ab','C']
+      if(newChord == 'Fm7') $scope.test = ['F','Ab','C','E']
+      if(newChord == 'FM7') $scope.test = ['F','A','C','E']
 
-
-$scope.resets = document.getElementsByClassName('high')
-let resets = angular.element($scope.resets)
-
-$log.info('resets',$scope.resets)
-angular.forEach(resets,function(reset){
-  $log.info('tooobeeereseet:',reset)
-  let ellie = angular.element(reset)
-  ellie.removeClass('high');
-
-
-
-})
-
-
-// for (var i = 0; i < $scope.resets.length; i++) {
-//   $log.info(' to be reset:',$scope.resets[i]);
-
-
-
-
-
-// $log.info('RCL:',resets.classList)
-// let index = resets.classList.indexOf('high')
-// resets.classList.splice(index,1)
-// for (let i = 0; i < resets.length; i++) {
-//   $log.info('to be reset:',resets[i])
-//   // let cL = resets[i].classList
-//   // let index = cL.indexOf('high')
-//   // cL.splice(index,1)
-// }
+      $scope.resets = document.getElementsByClassName('high')
+      let resets = angular.element($scope.resets)
+      angular.forEach(resets,function(reset){
+        let ellie = angular.element(reset)
+        ellie.removeClass('high');
+      })
       for (let i = 0; i < rows.length; i++) {
         let cells = rows[i].cells
         $log.info('cells:',cells)
@@ -96,27 +97,7 @@ angular.forEach(resets,function(reset){
           })
         }
       }
-
     }
-    // var fretObj = fret[0];
-    // console.log('fretObj:',fretObj);
-    // var rows = fret.rows
-
-    //var cells = $rows.cells[0].innerText
-    // console.log('rows:',rows)
-    // console.log('cells:',$scope.cells)
-
-    // for(var j = 0; j < rows.length; j++){
-    //   // console.log(rows[j].cells)
-    //   var cells = rows[j].cells
-    //   console.log('cells',cells)
-    //
-    //   for (var k= 0; k < cells.length; k++) {
-    //     var cell = cells[k]
-    //     // cell.className += " high"
-    //     // console.log('cellText:',cell.innerText)
-    //   }
-    // }
 
 
 

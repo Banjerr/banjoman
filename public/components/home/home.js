@@ -5,7 +5,13 @@ angular.module('banjoman')
     templateUrl: '/components/home/home.html',
     controller: function ($scope,$log,$timeout,ngAudio,stringService,$document,$window) {
       $scope.play = function(tuning,chord,string){
+        $log.info('pressed!!!!!!!!!!')
         return ngAudio.play(obj[tuning][chord][string])
+      }
+      $scope.foo = function(keyEvent) {
+        if (keyEvent.keyCode ===13)
+        alert('I am an alert');
+        $log.info('pressed!')
       }
 
 
@@ -78,6 +84,8 @@ angular.module('banjoman')
 
 
 
+
     }
   }
 })
+ 

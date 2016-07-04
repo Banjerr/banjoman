@@ -2,7 +2,7 @@
 <html ng-app="banjoman">
 <head>
   <!-- Angular -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <!-- ngAudio -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-audio/1.7.2/angular.audio.min.js"></script>
   <!-- createJS -->
@@ -27,12 +27,14 @@
 <!-- quicksand-font -->
 <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css' >
 </head>
-<body>
+<body ng-keypress="$event.which === 59 && play(tuning,chord,'one');$event.which === 108 && play(tuning,chord,'two');$event.which === 107 && play(tuning,chord,'three');$event.which === 106 && play(tuning,chord,'four');$event.which === 32 && play(tuning,chord,'five');">
 
 
+<audio-test></audio-test>
 
 
-  <ui-view></ui-view>
+<!--
+  <ui-view></ui-view> -->
 
 
 

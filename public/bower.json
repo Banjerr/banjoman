@@ -23,6 +23,7 @@
     "tone": "*",
     "ng-audio": "^0.0.2",
     "webaudiox": "*",
-    "csshake": "*"
+    "csshake": "*",
+    "Materialize": "materialize#^0.97.6"
   }
 }

@@ -1,35 +1,49 @@
-  <!-- <chord-test><chord-test/> -->
-<div>
-  <chord-test></chord-test>
-</div>
-<h5>Pick a tuning</h5>
-<select ng-model='tuning' name="Tuning" class="input-field col s12" id="tuning">
-  <option value="GMajor">G major</option>
-  <option value="Gm">G minor</option>
-  <option value="C">Open C</option>
-  <option value="DblC">Double C</option>
-  <option value="Gmodal">G modal</option>
-</select>
 
-<h5>Pick a chord</h5>
-<select ng-change="chordChange(chord)" ng-model="chord" name="chord" id="chord">
-  <option  ng-value="G">G</option>
-  <option  ng-value="Gm">Gm</option>
-  <option  ng-value="A">A</option>
-  <option  ng-value="Am">Am</option>
-  <option  ng-value="B">B</option>
-  <option  ng-value="Bm">Bm</option>
-  <option  ng-value="Bm7">Bm7</option>
-</select>
-<div class="stringContainer">
+<div class="container" >
+  <div class="col s4">
+    <chord-test></chord-test>
+  </div>
+  <div class="col s2">
+    <h5>Pick a tuning</h5>
+    <select ng-model='tuning' name="Tuning" class="input-field col s12" id="tuning">
+      <option value="GMajor">G major</option>
+      <option value="Gm">G minor</option>
+      <option value="C">Open C</option>
+      <option value="DblC">Double C</option>
+      <option value="Gmodal">G modal</option>
+    </select>
+  </div>
 
-  <div id="string5"class="shake-little" ng-mouseover="play(tuning,chord,'five')"></div>
-  <div id="string4"class="shake-little" ng-mouseover="play(tuning,chord,'four')" ></div>
-  <div id="string3"class="shake-little" ng-mouseover="play(tuning,chord,'three')" ></div>
-  <div id="string2" class="shake-little" ng-mouseover="play(tuning,chord,'two')" ></div>
-  <div id="string1"class="shake-little" ng-mouseover="play(tuning,chord,'one')" ></div>
-</div>
+  <div class="col s2">
+    <h5>Pick a chord</h5>
+    <select ng-change="chordChange(chord)" ng-model="chord" name="chord" id="chord">
+      <option  ng-value="G">G</option>
+      <option  ng-value="Gm">Gm</option>
+      <option  ng-value="A">A</option>
+      <option  ng-value="Am">Am</option>
+      <option  ng-value="B">B</option>
+      <option  ng-value="Bm">Bm</option>
+      <option  ng-value="C">C</option>
+      <option  ng-value="Cm">Cm</option>
+      <option  ng-value="D">D</option>
+      <option  ng-value="Dm">Dm</option>
+      <option  ng-value="E">E</option>
+      <option  ng-value="Em">Em</option>
+      <option  ng-value="F">F</option>
+      <option  ng-value="Fm">Fm</option>
+    </select>
+  </div>
+  <div class="col s5">
+    <div class="stringContainer">
 
+      <div id="string5"class="shake-little" ng-mouseover="play(tuning,chord,'five')"></div>
+      <div id="string4"class="shake-little" ng-mouseover="play(tuning,chord,'four')" ></div>
+      <div id="string3"class="shake-little" ng-mouseover="play(tuning,chord,'three')" ></div>
+      <div id="string2" class="shake-little" ng-mouseover="play(tuning,chord,'two')" ></div>
+      <div id="string1"class="shake-little" ng-mouseover="play(tuning,chord,'one')"  ng-keypress="foo($event)" ></div>
+    </div>
+  </div>
+  </div>
 
 
 
