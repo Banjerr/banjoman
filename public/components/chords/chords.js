@@ -5,7 +5,7 @@ angular.module('banjoman')
     templateUrl: '/components/chords/chords.html',
     // scope:{},
     controller: function ($scope,$log,$timeout,$document,$window) {
-
+$scope.tuning = 'Gmajor'
 
       var open = [['D','G','B','D'],['D#','G#','C','D#'],['E','A','C#','E'],['F','A#','D','F'],
       ['F#','B','D#','F#'],['G','C','E','G']]

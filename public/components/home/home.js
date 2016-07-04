@@ -14,7 +14,7 @@ angular.module('banjoman')
       }
 
 
-      $scope.tuning="Gmajor";
+      // $scope.tuning="Gmajor";
       $scope.chord="A";
 
       let s = stringService;

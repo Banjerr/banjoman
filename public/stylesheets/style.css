@@ -85,13 +85,39 @@ flex-basis: 1%;
 
 
 }
+
+.fret td{
+  background-image: url("http://www.wood-database.com/wp-content/uploads/red-maple-2.jpg");
+  border-bottom: 3px solid silver;
+  border-top: 3px solid silver;
+  padding:0;
+  margin:0;
+}
 .high{
 
   font-weight: bold;
-  color:blue;
-  transform: scale(1.25);
+  color:rgb(31, 57, 71);
+  transform: scale(1.1);
   transition: 1s ease;
-  background-color: rgba(110, 131, 59, 0.63);
-  border-radius: 100%;
-  justify-text: center;
+  /*background-color: rgba(110, 131, 59, 0.63);*/
+  border-radius: 200%;
+
+  border:4px solid gold;
+}
+.heady{
+  background-image: url('http://static1.squarespace.com/static/540f7a33e4b0f7682186bf99/t/55f69991e4b03625624af6f0/1442224529148/ivory+sweat+background+color.jpg');
+  border-bottom:3px solid black;
+}
+.fretboard{
+  width:20%;
+  text-align: center;
+  height:80vh;
+  margin-bottom:5%;
+padding-bottom:5%;
+}
+/*.fretboard td{
+  height:120%;
+}*/
+.tableConatainer{
+  height:100%
 }
