@@ -8,9 +8,8 @@ angular.module('banjoman')
         $log.info('pressed!!!!!!!!!!')
         return ngAudio.play(obj[tuning][chord][string])
       }
-      $scope.foo = function(keyEvent) {
-        if (keyEvent.keyCode ===13)
-        alert('I am an alert');
+      $scope.fingerChange = function(chord) {
+        $scope.chord = chord;
         $log.info('pressed!')
       }
 
@@ -88,4 +87,3 @@ angular.module('banjoman')
     }
   }
 })
- 
