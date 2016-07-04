@@ -7,10 +7,10 @@ angular.module('banjoman')
       $scope.play = function(tuning,chord,string){
         return ngAudio.play(obj[tuning][chord][string])
       }
-    
+
 
       $scope.tuning="Gmajor";
-      $scope.chord="G";
+      $scope.chord="A";
 
       let s = stringService;
       let play = ngAudio.play;

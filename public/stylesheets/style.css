@@ -89,4 +89,9 @@ flex-basis: 1%;
 
   font-weight: bold;
   color:blue;
+  transform: scale(1.5);
+  transition: 1s ease;
+  background-color: rgba(110, 131, 59, 0.63);
+  border-radius: 100%;
+  justify-text: center;
 }
