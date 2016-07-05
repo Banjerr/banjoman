@@ -5,7 +5,7 @@ angular.module('banjoman')
     templateUrl: '/components/chords/chords.html',
     // scope:{},
     controller: function ($scope,$log,$timeout,$document,$window) {
-$scope.tuning = 'Gmajor'
+      $scope.tuning = 'Gmajor'
 
       var open = [['D','G','B','D'],['D#','G#','C','D#'],['E','A','C#','E'],['F','A#','D','F'],
       ['F#','B','D#','F#'],['G','C','E','G']]
@@ -42,11 +42,12 @@ $scope.tuning = 'Gmajor'
 
     //})
 
-    var result2 =[]
-    var fret = document.getElementsByClassName("fretboard");
-    console.log('fret',fret)
-    var rows = fret[0].rows
-    $log.info('rows:',rows)
+    // var result2 =[]
+    //
+    // $log.info('rows:',rows)
+    // $scope.tuningChange = function(){
+    //
+    // }
 
     $scope.chordChange = function(newChord){
       $scope.chord = newChord;
@@ -78,13 +79,21 @@ $scope.tuning = 'Gmajor'
       if(newChord == 'Fm') $scope.test = ['F','Ab','C']
       if(newChord == 'Fm7') $scope.test = ['F','Ab','C','Eb']
       if(newChord == 'FM7') $scope.test = ['F','A','C','E']
+      let fret = document.getElementsByClassName("fretboard");
+      let rows = fret[0].rows
 
       $scope.resets = document.getElementsByClassName('high')
+
       let resets = angular.element($scope.resets)
       angular.forEach(resets,function(reset){
         let ellie = angular.element(reset)
         ellie.removeClass('high');
       })
+
+
+
+
+
       for (let i = 0; i < rows.length; i++) {
         let cells = rows[i].cells
         $log.info('cells:',cells)
@@ -93,11 +102,16 @@ $scope.tuning = 'Gmajor'
           $scope.test.forEach(function(note){
             if (cells[j].innerText == note) {
               $log.info('found one!',cells[j].innerText);
-              cells[j].className +='high'
+              let cellie = angular.element(cells[j]);
+              cellie.addClass('high');
+              // cells[j].className +='high'
             }
           })
         }
       }
+
+
+
     }
 
 

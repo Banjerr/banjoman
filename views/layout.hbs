@@ -25,6 +25,8 @@
   <script src ="../components/home/home.js"></script>
   <!-- chord directive -->
   <script src ="../components/chords/chords.js"></script>
+  <!-- selector directive -->
+  <script src ="../components/selector/selector.js"></script>
   <!-- services -->
   <script src ="../services/string_service.js"></script>
   <!-- css -->
@@ -45,6 +47,7 @@ $event.which === 106 && play(tuning,chord,'four');
 $event.which === 110 && play(tuning,chord,'five');
 $event.which === 49 && chordChange('G');
 $event.which === 113 && chordChange('Gm');
+$event.which === 97 && chordChange('Gm7');
 $event.which ===50 && chordChange('A');
 $event.which ===119 &&chordChange('Am');
 $event.which ===51 &&chordChange('B');
@@ -53,10 +56,18 @@ $event.which ===52 &&chordChange('C');
 $event.which ===114 &&chordChange('Cm');
 $event.which ===53 &&chordChange('D');
 $event.which ===116 &&chordChange('Dm');
-$event.which ===100 &&chordChange('E');
-$event.which ===99 &&chordChange('Em');
-$event.which ===102 &&chordChange('F');
-$event.which ===118 &&chordChange('Fm');
+$event.which ===118 &&chordChange('E');
+$event.which ===98 &&chordChange('Em');
+$event.which ===122 &&chordChange('F');
+$event.which ===120 &&chordChange('Fm');
+$event.which ===115 &&chordChange('Am7');
+$event.which ===104 &&chordChange('Em7');
+$event.which ===103 &&chordChange('Dm7');
+$event.which ===102 &&chordChange('Cm7');
+$event.which ===100 &&chordChange('Bm7');
+$event.which ===99 &&chordChange('Fm7');
+
+
 $event.which ===13 &&strum(tuning,chord,'one','two','three','four');
 
 ">
@@ -81,48 +92,10 @@ $event.which ===13 &&strum(tuning,chord,'one','two','three','four');
 <div class="contianer container-fluid  ">
   <audio-test class=""id="neck"></audio-test>
   <chord-test class="col-md-3" id="fingerings"></chord-test>
-  <!-- <ui-view></ui-view> -->
- <span id="selectors">
-    <div class="col-md-3">
-    <h2>Pick a tuning</h2>
-    <select ng-model='tuning' name="tuning" class="form-control selectpicker" id="tuning">
-    <option value="GMajor">G major</option>
-    <option value="Gm">G minor</option>
-    <option value="C">Open C</option>
-    <option value="DblC">Double C</option>
-    <option value="Gmodal">G modal</option>
-    </select>
-    <h2>Pick a chord</h2>
-    <select ng-change="chordChange(chord)" ng-model="chord" name="chord" id="chord"class="form-control selectpicker">
-    <option  ng-value="G">G</option>
-    <option  ng-value="Gm">Gm</option>
-    <option  ng-value="Gm7">Gm7</option>
-    <option  ng-value="A">A</option>
-    <option  ng-value="Am">Am</option>
-    <option  ng-value="Am7">Am7</option>
-    <option  ng-value="B">B</option>
-    <option  ng-value="Bm">Bm</option>
-    <option  ng-value="Bm7">Bm7</option>
-    <option  ng-value="C">C</option>
-    <option  ng-value="Cm">Cm</option>
-    <option  ng-value="Cm7">Cm7</option>
-    <option  ng-value="D">D</option>
-    <option  ng-value="Dm">Dm</option>
-    <option  ng-value="Dm7">Dm7</option>
-    <option  ng-value="E">E</option>
-    <option  ng-value="Em">Em</option>
-    <option  ng-value="Em7">Em7</option>
-    <option  ng-value="F">F</option>
-    <option  ng-value="Fm">Fm</option>
-    <option  ng-value="Fm7">Fm7</option>
-    </select>
-    </div>
-    </span>
+  <selector tuning='tuning'chord="chord" obj="Obj"></selector>
 
 
 </div>
-
-
 
 
 
