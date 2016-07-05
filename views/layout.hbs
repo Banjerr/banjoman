@@ -36,7 +36,7 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css' >
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body
+<body class="col-md-12"
 ng-keypress="
 $event.which === 59 && play(tuning,chord,'one');
 $event.which === 108 && play(tuning,chord,'two');
@@ -65,10 +65,10 @@ $event.which ===118 &&chordChange('Fm');
       <a class="navbar-brand" href="#">
         <img id="banjoman"alt="banjoman" ng-src="../images/thebanojman.gif">
       </a>
-      <div class="col-md-offset-7">
-        <span id="title">BANJONEER</span>
-      </div>
     </div>
+
+      <span id="title">BANJONEER</span>
+
 
     <div id="keybrdBtn"class="navbar-right">
       <button id="innerBtn"type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -77,12 +77,12 @@ $event.which ===118 &&chordChange('Fm');
     </div>
   </div>
 </nav>
-<div class="contianer container-fluid content col-md-12">
-  <chord-test id="fingerings"></chord-test>
-  <audio-test id="neck"></audio-test>
+<div class="contianer container-fluid  ">
+  <audio-test class=""id="neck"></audio-test>
+  <chord-test class="col-md-3" id="fingerings"></chord-test>
   <!-- <ui-view></ui-view> -->
-  <span id="selectors">
-    <div class="col-md-offset-4 col-md-2 text-right">
+ <span id="selectors">
+    <div class="col-md-3">
     <h2>Pick a tuning</h2>
     <select ng-model='tuning' name="tuning" class="form-control selectpicker" id="tuning">
     <option value="GMajor">G major</option>
