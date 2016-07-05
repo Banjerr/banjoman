@@ -32,8 +32,9 @@
   <!-- csshake -->
   <link rel="stylesheet" href="../bower_components/csshake/dist/csshake-little.min.css"/>
   <link rel="stylesheet" href="../bower_components/csshake/scss/csshake-little.scss"/>
-  <!-- quicksand-font -->
+  <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans' rel='stylesheet' type='text/css' >
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body
 ng-keypress="
@@ -64,11 +65,15 @@ $event.which ===118 &&chordChange('Fm');
       <a class="navbar-brand" href="#">
         <img id="banjoman"alt="banjoman" ng-src="../images/thebanojman.gif">
       </a>
-      <div class="navbar-right">
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          How to Play
-        </button>
+      <div class="col-md-offset-5">
+        <span id="title">BANJONEER</span>
       </div>
+    </div>
+
+    <div id="keybrdBtn"class="navbar-right">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        How to Play
+      </button>
     </div>
   </div>
 </nav>

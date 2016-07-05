@@ -170,7 +170,13 @@ left:5%;
 #neck{
   /*display: flex;*/
 
-
-
+}
+#keybrdBtn{
+  padding-right: 3%;
+  padding-top: 2%;
+}
+#title{
+  font-family: Amatic+SC;
+  font-size: 38px;
 
 }
