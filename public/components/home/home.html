@@ -1,9 +1,17 @@
 
-<div class="container" >
-  <div class="col s4">
 
-  </div>
-  <div class="col s2">
+
+
+  <div class="col-md-5">
+    <div class="stringContainer col-md-2">
+<div id="string5"class="shake-little" ng-mouseover="play(tuning,chord,'five')"></div>
+      <div id="string4"class="shake-little" ng-mouseover="play(tuning,chord,'four')" ></div>
+      <div id="string3"class="shake-little" ng-mouseover="play(tuning,chord,'three')" ></div>
+      <div id="string2" class="shake-little" ng-mouseover="play(tuning,chord,'two')" ></div>
+      <div id="string1"class="shake-little" ng-mouseover="play(tuning,chord,'one')"  ng-keypress="foo($event)" ></div>
+    </div>
+
+      <!-- <div class="col-md-2">
     <h5>Pick a tuning</h5>
     <select ng-model='tuning' name="uning" class="input-field col s12" id="tuning">
       <option value="GMajor">G major</option>
@@ -12,9 +20,6 @@
       <option value="DblC">Double C</option>
       <option value="Gmodal">G modal</option>
     </select>
-  </div>
-
-  <div class="col s2">
     <h5>Pick a chord</h5>
     <select ng-change="chordChange(chord)" ng-model="chord" name="chord" id="chord">
       <option  ng-value="G">G</option>
@@ -39,19 +44,15 @@
       <option  ng-value="Fm">Fm</option>
       <option  ng-value="Fm7">Fm7</option>
     </select>
-  </div>
-  <div class="col s5">
-    <div class="stringContainer">
+      </div> -->
 
-      <div id="string5"class="shake-little" ng-mouseover="play(tuning,chord,'five')"></div>
-      <div id="string4"class="shake-little" ng-mouseover="play(tuning,chord,'four')" ></div>
-      <div id="string3"class="shake-little" ng-mouseover="play(tuning,chord,'three')" ></div>
-      <div id="string2" class="shake-little" ng-mouseover="play(tuning,chord,'two')" ></div>
-      <div id="string1"class="shake-little" ng-mouseover="play(tuning,chord,'one')"  ng-keypress="foo($event)" ></div>
+
     </div>
-  </div>
-  </div>
+    </select>
+      </div>
 
 
+    </div>
 
-<div audio options="options"/>
+
+<!-- <div audio options="options"/> -->

@@ -58,11 +58,11 @@ $event.which ===102 &&chordChange('F');
 $event.which ===118 &&chordChange('Fm');
 
 ">
-<nav class="navbar navbar-default">
+<nav id="header" class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Brand" ng-src="../images/sg2.png">
+        <img id="banjoman"alt="banjoman" ng-src="../images/thebanojman.gif">
       </a>
       <div class="navbar-right">
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -72,12 +72,15 @@ $event.which ===118 &&chordChange('Fm');
     </div>
   </div>
 </nav>
+<div class="contianer container-fluid content col-md-12">
+  <chord-test id="fingerings"></chord-test>
+  <audio-test id="neck"></audio-test>
+  <!-- <ui-view></ui-view> -->
 
-<chord-test class ="col s5">
+</div>
 
 
-</chord-test>
-<audio-test class="col s5"></audio-test>
+
 
 
 <!-- Modal -->
@@ -85,7 +88,7 @@ $event.which ===118 &&chordChange('Fm');
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        
+
         <h4 class="modal-title" id="myModalLabel">Banjo Controls</h4>
       </div>
       <div class="modal-body">
@@ -100,7 +103,7 @@ $event.which ===118 &&chordChange('Fm');
 </div>
 
 <!--
-<ui-view></ui-view> -->
+
 
 
 
