@@ -377,7 +377,7 @@ angular.module('banjoman')
           G:
           {
             one:s.D4,
-            two:s.B3,
+            two:s.D4,
             three:s.G3,
             four:s.D3,
             five:s.G4
@@ -385,8 +385,8 @@ angular.module('banjoman')
           Gm:
           {
             one:s.D4,
-            two:s.Bb3,
-            three:s.G3,
+            two:s.D4,
+            three:s.Bb3,
             four:s.D3,
             five:s.G4
           },
@@ -401,7 +401,7 @@ angular.module('banjoman')
           A:
           {
             one: s.E4,
-            two: s.D4,
+            two: s.Db4,
             three:s.A3,
             four:s.E3,
             five:s.A4
@@ -420,19 +420,19 @@ angular.module('banjoman')
             two: s.C4,
             three:s.A3,
             four:s.E3,
-            five:s.A4
+            five:s.G4
           },
           B:
           {
-            one: s.Eb4,
-            two: s.B3,
+            one: s.Gb4,
+            two: s.Eb4,
             three:s.B3,
             four:s.Gb3,
             five:s.B4
           },
           Bm:
           {
-            one: s.D4,
+            one: s.Gb4,
             two: s.D4,
             three:s.B3,
             four:s.Gb3,
@@ -441,33 +441,33 @@ angular.module('banjoman')
           Bm7:
           {
             one: s.Gb4,
-            two: s.B3,
+            two: s.D4,
             three:s.A3,
-            four:s.D4,
+            four:s.D3,
             five:s.A4
           },
           C:
           {
-            one: s.E4,
-            two: s.C4,
-            three:s.G3,
-            four:s.E3,
+            one: s.G4,
+            two: s.E4,
+            three:s.C4,
+            four:s.G3,
             five:s.G4
           },
           Cm:
           {
-            one: s.Eb4,
-            two: s.C4,
-            three:s.G3,
-            four:s.Eb3,
+            one: s.G4,
+            two: s.Eb4,
+            three:s.C4,
+            four:s.G3,
             five:s.G4
           },
           Cm7:
           {
             one: s.Eb4,
-            two: s.C4,
-            three:s.Bb3,
-            four:s.Eb3,
+            two: s.Eb4,
+            three:s.B3,
+            four:s.G3,
             five:s.G4
           },
           D:
@@ -475,8 +475,8 @@ angular.module('banjoman')
             one: s.Gb4,
             two: s.D4,
             three:s.A3,
-            four:s.D3,
-            five:s.G4
+            four:s.Gb3,
+            five:s.A4
           },
           Dm:
           {
@@ -484,7 +484,7 @@ angular.module('banjoman')
             two: s.D4,
             three:s.A3,
             four:s.D3,
-            five:s.G4
+            five:s.A4
           },
           Dm7:
           {
@@ -497,32 +497,32 @@ angular.module('banjoman')
           E:
           {
             one: s.E4,
-            two: s.B3,
-            three:s.Ab3,
-            four:s.E3,
+            two: s.E4,
+            three:s.B3,
+            four:s.G3,
             five:s.G4
           },
           Em:
           {
-            one: s.E4,
-            two: s.B3,
-            three:s.G3,
-            four:s.E3,
-            five:s.G4
+            one: s.Gb4,
+            two: s.E4,
+            three:s.B3,
+            four:s.Gb3,
+            five:s.Gb4
           },
           Em7:
           {
             one: s.D4,
-            two: s.B3,
-            three:s.G3,
-            four:s.E3,
-            five:s.G4
+            two: s.D4,
+            three:s.B3,
+            four:s.Gb3,
+            five:s.Gb4
           },
           F:
           {
             one: s.F4,
             two: s.C4,
-            three:s.A3,
+            three:s.Ab3,
             four:s.F3,
             five:s.G4
           },
@@ -536,7 +536,7 @@ angular.module('banjoman')
           },
           Fm7:
           {
-            one: s.F4,
+            one: s.E4,
             two: s.C4,
             three:s.Ab3,
             four:s.Eb3,

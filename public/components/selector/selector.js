@@ -9,7 +9,7 @@ angular.module('banjoman')
       obj: '='
     },
     controller: function ($scope,$log) {
-      $scope.tuning ='DblC';
+      $scope.tuning ='Gmodal';
       $scope.chordChange = function(newChord){
         $scope.chord = newChord;
         if(newChord == 'G') $scope.test = ['G','B','D'];
@@ -21,9 +21,9 @@ angular.module('banjoman')
         if(newChord == 'Am7') $scope.test = ['A','C','E','G']
         if(newChord == 'AM7') $scope.test = ['A','C#','E','Ab']
         if(newChord == 'B') $scope.test = ['B','Eb','F#']
-        if(newChord == 'Bm') $scope.test = ['B','D','F']
-        if(newChord == 'Bm7') $scope.test = ['B','D','F','G']
-        if(newChord == 'BM7') $scope.test = ['B','Eb','F','G']
+        if(newChord == 'Bm') $scope.test = ['B','D','F#']
+        if(newChord == 'Bm7') $scope.test = ['B','D','F#','A']
+        if(newChord == 'BM7') $scope.test = ['B','Eb','F','A']
         if(newChord == 'C') $scope.test = ['C','E','G']
         if(newChord == 'Cm7') $scope.test = ['C','Eb','G','B']
         if(newChord == 'CM7') $scope.test = ['C','E','G','B']
@@ -32,13 +32,13 @@ angular.module('banjoman')
         if(newChord == 'Dm') $scope.test = ['D','F','A']
         if(newChord == 'Dm7') $scope.test = ['D','F','A','C']
         if(newChord == 'DM7') $scope.test = ['D','F#','A','C#']
-        if(newChord == 'E') $scope.test = ['E','Ab','B']
-        if(newChord == 'Em') $scope.test = ['E','G','B']
-        if(newChord == 'Em7') $scope.test = ['E','G','B','D']
-        if(newChord == 'EM7') $scope.test = ['E','Ab','B','Eb']
+        if(newChord == 'E') $scope.test = ['E','G','B']
+        if(newChord == 'Em') $scope.test = ['E','F#','B']
+        if(newChord == 'Em7') $scope.test = ['E','F#','B','D']
+        if(newChord == 'EM7') $scope.test = ['E','G','B','D']
         if(newChord == 'F') $scope.test = ['F','A','C']
         if(newChord == 'Fm') $scope.test = ['F','Ab','C']
-        if(newChord == 'Fm7') $scope.test = ['F','Ab','C','Eb']
+        if(newChord == 'Fm7') $scope.test = ['F','Ab','C','E']
         if(newChord == 'FM7') $scope.test = ['F','A','C','E']
         let fret = document.getElementsByClassName("fretboard");
         let rows = fret[0].rows
