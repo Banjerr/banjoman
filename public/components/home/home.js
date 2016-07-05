@@ -12,6 +12,13 @@ angular.module('banjoman')
         $scope.chord = chord;
         $log.info('pressed!')
       }
+      $scope.strum= function(tuning,chord,string1,string2,string3,string4){
+        // return
+        ngAudio.play(obj[tuning][chord][string1]);
+        ngAudio.play(obj[tuning][chord][string2]);
+        ngAudio.play(obj[tuning][chord][string3]);
+        ngAudio.play(obj[tuning][chord][string4]);
+      }
 
 
       // $scope.tuning="Gmajor";
