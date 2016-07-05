@@ -193,3 +193,9 @@ font-weight: bold;
   margin-left:4%;
 
 }
+#chordTable td {
+  border-bottom: 1px solid black;
+}
+#chordTable{
+right: 15%;
+}

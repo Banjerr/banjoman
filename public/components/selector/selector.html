@@ -1,37 +1,155 @@
 <span id="selectors">
-   <div class="col-md-3">
-   <h2>Pick a tuning</h2>
-   <select value='GMajor' ng-model='tuning' name="tuning" class="form-control selectpicker" id="tuning">
-   <option value="GMajor">G major</option>
-   <option value="Gm">G minor</option>
-   <option value="C">Open C</option>
-   <option value="DblC">Double C</option>
-   <option value="Gmodal">G modal</option>
-   </select>
-   <h2>Pick a chord</h2>
-   <select ng-change="chordChange()" ng-model="chord" name="chord" id="chord"class="form-control selectpicker">
-   <option  ng-value="G">G</option>
-   <option  ng-value="Gm">Gm</option>
-   <option  ng-value="Gm7">Gm7</option>
-   <option  ng-value="A">A</option>
-   <option  ng-value="Am">Am</option>
-   <option  ng-value="Am7">Am7</option>
-   <option  ng-value="B">B</option>
-   <option  ng-value="Bm">Bm</option>
-   <option  ng-value="Bm7">Bm7</option>
-   <option  ng-value="C">C</option>
-   <option  ng-value="Cm">Cm</option>
-   <option  ng-value="Cm7">Cm7</option>
-   <option  ng-value="D">D</option>
-   <option  ng-value="Dm">Dm</option>
-   <option  ng-value="Dm7">Dm7</option>
-   <option  ng-value="E">E</option>
-   <option  ng-value="Em">Em</option>
-   <option  ng-value="Em7">Em7</option>
-   <option  ng-value="F">F</option>
-   <option  ng-value="Fm">Fm</option>
-   <option  ng-value="Fm7">Fm7</option>
-   </select>
-   </div>
-   </span>
+  <div class="col-md-4">
+    <h1>Pick a tuning</h1>
+    <select value='GMajor' ng-model='tuning' name="tuning" class="form-control selectpicker" id="tuning">
+      <option value="GMajor">G major</option>
+      <option value="Gm">G minor</option>
+      <option value="C">Open C</option>
+      <option value="DblC">Double C</option>
+      <option value="Gmodal">G modal</option>
+    </select>
+    <h1>Pick a chord</h1>
+  <strong> <div style="font-size:50px"ng-bind='chord'></div></strong>
+<table id="chordTable">
+  <tbody>
+    <tr>
+      
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)"class="btn btn-defualt"type="radio" ng-model="chord" value="A">
+          A
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="B">
+          B
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="C">
+          C
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="D">
+          D
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="E">
+          E
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="F">
+          F
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="G">
+          G
+        </label>
+      </td>
+    <tr>
+      
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)"class="btn btn-defualt"type="radio" ng-model="chord" value="Am">
+          Am
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Bm">
+          Bm
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Cm">
+          Cm
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Dm">
+          Dm
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Em">
+          Em
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Fm">
+          Fm
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Gm">
+          Gm
+        </label>
+      </td>
+    </tr>
+    <tr>
+      
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)"class="btn btn-defualt"type="radio" ng-model="chord" value="Am7">
+          Am7
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Bm7">
+          Bm7
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Cm7">
+          Cm7
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Dm7">
+          Dm7
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Em7">
+          Em7
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Fm7">
+          Fm7
+        </label>
+      </td>
+      <td>
+        <label>
+          <input ng-click="chordChange(chord)" class="btn btn-defualt"type="radio" ng-model="chord" value="Gm7">
+          Gm7
+        </label>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+</span>
 </div>
