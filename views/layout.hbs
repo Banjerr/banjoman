@@ -65,13 +65,13 @@ $event.which ===118 &&chordChange('Fm');
       <a class="navbar-brand" href="#">
         <img id="banjoman"alt="banjoman" ng-src="../images/thebanojman.gif">
       </a>
-      <div class="col-md-offset-5">
+      <div class="col-md-offset-7">
         <span id="title">BANJONEER</span>
       </div>
     </div>
 
     <div id="keybrdBtn"class="navbar-right">
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      <button id="innerBtn"type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
         How to Play
       </button>
     </div>
@@ -81,6 +81,43 @@ $event.which ===118 &&chordChange('Fm');
   <chord-test id="fingerings"></chord-test>
   <audio-test id="neck"></audio-test>
   <!-- <ui-view></ui-view> -->
+  <span id="selectors">
+    <div class="col-md-offset-4 col-md-2 text-right">
+    <h2>Pick a tuning</h2>
+    <select ng-model='tuning' name="tuning" class="form-control selectpicker" id="tuning">
+    <option value="GMajor">G major</option>
+    <option value="Gm">G minor</option>
+    <option value="C">Open C</option>
+    <option value="DblC">Double C</option>
+    <option value="Gmodal">G modal</option>
+    </select>
+    <h2>Pick a chord</h2>
+    <select ng-change="chordChange(chord)" ng-model="chord" name="chord" id="chord"class="form-control selectpicker">
+    <option  ng-value="G">G</option>
+    <option  ng-value="Gm">Gm</option>
+    <option  ng-value="Gm7">Gm7</option>
+    <option  ng-value="A">A</option>
+    <option  ng-value="Am">Am</option>
+    <option  ng-value="Am7">Am7</option>
+    <option  ng-value="B">B</option>
+    <option  ng-value="Bm">Bm</option>
+    <option  ng-value="Bm7">Bm7</option>
+    <option  ng-value="C">C</option>
+    <option  ng-value="Cm">Cm</option>
+    <option  ng-value="Cm7">Cm7</option>
+    <option  ng-value="D">D</option>
+    <option  ng-value="Dm">Dm</option>
+    <option  ng-value="Dm7">Dm7</option>
+    <option  ng-value="E">E</option>
+    <option  ng-value="Em">Em</option>
+    <option  ng-value="Em7">Em7</option>
+    <option  ng-value="F">F</option>
+    <option  ng-value="Fm">Fm</option>
+    <option  ng-value="Fm7">Fm7</option>
+    </select>
+    </div>
+    </span>
+
 
 </div>
 

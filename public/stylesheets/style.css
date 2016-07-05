@@ -1,10 +1,11 @@
 body {
   /*margin: 50px;*/
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
-  font-family: quicksand;
-  background-color: rgba(171, 171, 171, 0.2);
-  color:black;
-  font-size:26px;
+  /*font-family: quicksand;*/
+  font-family: 'Amatic SC', cursive;
+  background-color:rgb(194, 203, 177);
+  color:rgb(47, 39, 37);
+  font-size:36px;
   margin: 0 auto;
 }
 
@@ -174,9 +175,19 @@ left:5%;
 #keybrdBtn{
   padding-right: 3%;
   padding-top: 2%;
+
+}
+#innerBtn{
+  background-color: rgb(47, 39, 37);
 }
 #title{
-  font-family: Amatic+SC;
-  font-size: 38px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+color:rgb(47, 39, 37);
 
+}
+.selectpicker{
+  height:200%;
+  font-size:32px;
+  text-align: center;
 }
