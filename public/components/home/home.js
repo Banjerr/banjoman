@@ -4,7 +4,7 @@ angular.module('banjoman')
   return{
     templateUrl: '/components/home/home.html',
     controller: function ($scope,$log,$timeout,ngAudio,stringService,$document,$window) {
-      
+
       $scope.play = function(tuning,chord,string){
         $log.info('pressed!!!!!!!!!!')
         return ngAudio.play(obj[tuning][chord][string])
@@ -719,16 +719,16 @@ angular.module('banjoman')
           G:
           {
             one:s.D4,
-            two:s.B3,
-            three:s.G3,
+            two:s.D4,
+            three:s.B3,
             four:s.D3,
             five:s.G4
           },
           Gm:
           {
             one:s.D4,
-            two:s.Bb3,
-            three:s.G3,
+            two:s.D4,
+            three:s.Bb3,
             four:s.D3,
             five:s.G4
           },
@@ -737,13 +737,13 @@ angular.module('banjoman')
             one:s.F4,
             two:s.D4,
             three:s.Bb3,
-            four:s.F3,
+            four:s.D3,
             five:s.G4
           },
           A:
           {
             one: s.E4,
-            two: s.D4,
+            two: s.Db4,
             three:s.A3,
             four:s.E3,
             five:s.A4
@@ -761,31 +761,31 @@ angular.module('banjoman')
             one: s.E4,
             two: s.C4,
             three:s.A3,
-            four:s.E3,
+            four:s.C3,
             five:s.A4
           },
           B:
           {
-            one: s.Eb4,
-            two: s.B3,
+            one: s.Gb4,
+            two: s.Eb4,
             three:s.B3,
-            four:s.Gb3,
+            four:s.Eb3,
             five:s.B4
           },
           Bm:
           {
-            one: s.D4,
+            one: s.Gb4,
             two: s.D4,
             three:s.B3,
-            four:s.Gb3,
+            four:s.D3,
             five:s.B4
           },
           Bm7:
           {
             one: s.Gb4,
-            two: s.B3,
-            three:s.A3,
-            four:s.D4,
+            two: s.D4,
+            three:s.B3,
+            four:s.D3,
             five:s.A4
           },
           C:
@@ -818,7 +818,7 @@ angular.module('banjoman')
             two: s.D4,
             three:s.A3,
             four:s.D3,
-            five:s.G4
+            five:s.A4
           },
           Dm:
           {
@@ -826,7 +826,7 @@ angular.module('banjoman')
             two: s.D4,
             three:s.A3,
             four:s.D3,
-            five:s.G4
+            five:s.A4
           },
           Dm7:
           {
@@ -834,31 +834,31 @@ angular.module('banjoman')
             two: s.C4,
             three:s.A3,
             four:s.D3,
-            five:s.G4
+            five:s.A4
           },
           E:
           {
             one: s.E4,
-            two: s.B3,
+            two: s.E4,
             three:s.Ab3,
             four:s.E3,
-            five:s.G4
+            five:s.B4
           },
           Em:
           {
             one: s.E4,
-            two: s.B3,
-            three:s.G3,
+            two: s.E4,
+            three:s.B3,
             four:s.E3,
             five:s.G4
           },
           Em7:
           {
-            one: s.D4,
-            two: s.B3,
+            one: s.E4,
+            two: s.D4,
             three:s.G3,
             four:s.E3,
-            five:s.G4
+            five:s.B4
           },
           F:
           {
@@ -866,23 +866,23 @@ angular.module('banjoman')
             two: s.C4,
             three:s.A3,
             four:s.F3,
-            five:s.G4
+            five:s.A4
           },
           Fm:
           {
             one: s.F4,
             two: s.C4,
             three:s.Ab3,
-            four:s.F3,
-            five:s.G4
+            four:s.C3,
+            five:s.Ab4
           },
           Fm7:
           {
             one: s.F4,
-            two: s.C4,
+            two: s.Eb4,
             three:s.Ab3,
-            four:s.Eb3,
-            five:s.G4
+            four:s.C3,
+            five:s.Ab4
           }
 
         }

@@ -20,7 +20,7 @@ angular.module('banjoman')
           }
         })
       })
-      //determining test..ie if($scope.chord == 'A', test = [A,C#,E])
+      
       console.log('result:',result)
       var fret1 = ['D#','G#','C','D#']
       var fret2 = ['E','A','C#','E']
@@ -34,20 +34,8 @@ angular.module('banjoman')
         $scope.chord = newVal
       }
     );
-    // if($scope.chord == 'G') $scope.test = ['G','B','D']
-    // if($scope.chord == 'A') $scope.test = ['A','C#','E']
-
-    // $scope.watch($scope.chord,function(){
 
 
-    //})
-
-    // var result2 =[]
-    //
-    // $log.info('rows:',rows)
-    // $scope.tuningChange = function(){
-    //
-    // }
 
     $scope.chordChange = function(newChord){
       $scope.chord = newChord;

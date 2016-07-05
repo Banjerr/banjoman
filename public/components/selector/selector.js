@@ -9,7 +9,7 @@ angular.module('banjoman')
       obj: '='
     },
     controller: function ($scope,$log) {
-      $scope.tuning ='GMajor';
+      $scope.tuning ='DblC';
       $scope.chordChange = function(newChord){
         $scope.chord = newChord;
         if(newChord == 'G') $scope.test = ['G','B','D'];
