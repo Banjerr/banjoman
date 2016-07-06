@@ -14,61 +14,66 @@ body {
 #string1{
   display: inline-block;
   /*position:relative;*/
-  height:60vh;
-  width:1%;
+  height:90vh;
+  width:0.15%;
+/*background-color: black;*/
   background-color: rgba(171, 171, 171, 0.2);
-  margin: 0 .5%;
+  margin: 0 0.35%;
   z-index: 100;
   position: relative;
-  flex-basis: 1%;
-  margin-top:30%;
+  /*flex-basis: 1%;*/
+  margin-top:10%;
 }
 #string2
 {
   display: inline-block;
   /*position:relative;*/
-  height:60vh;
-  width:1%;
+  height:90vh;
+  width:0.15%;
+/*background-color: black;*/
   background-color: rgba(171, 171, 171, 0.2);
-  margin: 0 .5%;
-flex-basis: 1%;
+  margin: 0 0.35%;
+/*flex-basis: 1%;*/
   z-index: 100;
   position: relative;
-  margin-top:30%;
+  margin-top:10%;
 }
 #string3{
   display: inline-block;
   /*position:relative;*/
-  height:60vh;
-  width:1%;
+  height:90vh;
+  width:0.15%;
 
+/*background-color: black;*/
   background-color: rgba(171, 171, 171, 0.2);
-  margin: 0 .5%;
-flex-basis: 1%;
+  margin: 0 0.35%;
+/*flex-basis: 1%;*/
   z-index: 100;
   position: relative;
-  margin-top:30%;
+  margin-top:10%;
 }
 #string4{
   display: inline-block;
   /*position:relative;*/
-  height:60vh;
-  width:1%;
+  height:90vh;
+  width:0.15%;
+/*background-color: black;*/
   background-color: rgba(171, 171, 171, 0.2);
-  margin: 0 .5%;
-flex-basis: 1%;
-margin-top:30%;
+  margin: 0 0.35%;
+/*flex-basis: 1%;*/
+margin-top:10%;
 }
 #string5{
   display: inline-block;
   /*position:relative;*/
-  height:60vh;
-  width:1%;
+  height:90vh;
+  width:0.15%;
+/*background-color: black;*/
   background-color: rgba(171, 171, 171, 0.2);
-  margin: 0 .5%;
-  margin-top: 30%;
+  margin: 0 0.35%;
+  margin-top: 10%;
 
-flex-basis: 1%;
+/*flex-basis: 1%;*/
   z-index: 100;
   position: relative;
 }
@@ -77,10 +82,13 @@ flex-basis: 1%;
   /*align-items: center;*/
   display: flex;
   justify-content: center;
-  background-image: url('../images/neckyvector.svg');
+  background-image: url('../images/beautybanjo.png');
+  /*background-image: url('../images/necky.png')*/
   background-repeat: no-repeat;
   background-position: center;
   width:200%;
+  height:125vh;
+
 }
 .fret {
   background-image: url("http://www.wood-database.com/wp-content/uploads/red-maple-2.jpg");
@@ -111,7 +119,7 @@ flex-basis: 1%;
 }
 
 .fretboard{
-  width:75%;
+  width:100%;
   text-align: center;
   height:80vh;
   /*margin-bottom:5%;*/
@@ -152,14 +160,16 @@ border-radius: 2%;
 #fingerings{
   position: relative;
 
-  right:15%;
-  margin-top: 9%;
+  right:7%;
+  margin-top: 4%;
 
 }
 #neck{
 position: relative;
 width: 125%;
 right:25%;
+
+
 
 }
 #keybrdBtn{
