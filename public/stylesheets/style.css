@@ -2,8 +2,9 @@ body {
   display: grid;
   /*margin: 50px;*/
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
-  /*font-family: quicksand;*/
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Quicksand';
+
+  /*font-family: 'Amatic SC', cursive;*/
   background-color:rgb(194, 203, 177);
   color:rgb(47, 39, 37);
   font-size:36px;
@@ -12,9 +13,7 @@ body {
 #selectors{
   font-family: 'Amatic SC';
 }
-option.fonty{
-  font-family: inherit;
-}
+
 
 #string1{
   display: inline-block;
@@ -203,6 +202,7 @@ justify-content: space-around;
   font-size: 30px;
 color:white;
 border-radius: 5%;
+font-family: 'Amatic SC';
 }
 .innerBtn:hover{
   transform: scale(1.1);
@@ -237,4 +237,14 @@ border-radius: 5%;
 }
 #chordTable{
   right: 15%;
+}
+#controlsTitle{
+  font-family: "Amatic SC";
+  font-weight: bold;
+  font-size: 44px;
+}
+#aboutTitle{
+  font-family: "Amatic SC";
+  font-weight: bold;
+  font-size: 44px;
 }
