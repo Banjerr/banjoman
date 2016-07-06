@@ -156,8 +156,7 @@ height:120%;
 #header{
   height:150px;
   width:100%;
-  /*background-image: url('../images/appleblossom.jpg');*/
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
 }
 #banjoman{
   width:50%;
