@@ -66,48 +66,44 @@ $event.which ===103 &&chordChange('Dm7');
 $event.which ===102 &&chordChange('Cm7');
 $event.which ===100 &&chordChange('Bm7');
 $event.which ===99 &&chordChange('Fm7');
+$event.which ===13 &&strum(tuning,chord,'one','two','three','four');">
 
-
-$event.which ===13 &&strum(tuning,chord,'one','two','three','four');
-
-">
-<nav id="header" class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img id="banjoman"alt="banjoman" ng-src="../images/thebanojman.gif">
-      </a>
-    </div>
-
+<div class="contianer container-fluid">
+  <nav id="header" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img id="banjoman"alt="banjoman" ng-src="../images/thebanojman.gif">
+        </a>
+      </div>
       <span id="title">BANJONEER</span>
-
-
-    <div id="keybrdBtn"class="navbar-right">
-      <button id="innerBtn"type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        How to Play
-      </button>
+      <div class="nav navbar-nav navbar-right topBtns">
+        <button class="innerBtn"type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#aboutModal">
+          About
+        </button>
+        <button class="innerBtn"type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#keyboardModal">
+          How to Play
+        </button>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="contianer container-fluid  ">
+  </nav>
   <audio-test class=""id="neck"></audio-test>
   <chord-test class="col-md-3" id="fingerings"></chord-test>
   <selector tuning='tuning'chord="chord" obj="Obj"></selector>
-
-
 </div>
-
-
-
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="keyboardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
 
-        <h4 class="modal-title" id="myModalLabel">Banjo Controls</h4>
+        <h2 class="modal-title" id="controlsTitle">Banjo Controls</h2>
       </div>
       <div class="modal-body">
+        <h3>Right Hand: place fingers on the 'strings' keys</h3>
+        <h3>Left Hand: change chords</h3>
+        <h3>Fun Fact: You can also hover over the banjo to listen to the current chord!</h3>
+
         <img class="col-md-12" id ="keyboard"ng-src="../images/keyboard.png" alt="keyboard" />
 
       </div>
@@ -117,18 +113,25 @@ $event.which ===13 &&strum(tuning,chord,'one','two','three','four');
     </div>
   </div>
 </div>
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
 
+        <h2 class="modal-title" id="aboutTitle">About</h2>
+      </div>
+      <div class="modal-body">
+        <h3>Banjoneer is a tuning and teaching tool that can help banjo players find chord fingerings in a a variety of tunings</h3>
+        <h3>Why?: Banjo is a dynamic instrument and players can easily change the mood and vocie of their instrument by playing in a different tuning. As a student, I found it hard remember chord placements!</h3>
+        <h3>How?:Select a tuning. The fretboard will update with finger placements.  Rinse and repeat!</h3>
 
-
-
-
-
-
-
-
-
-
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
